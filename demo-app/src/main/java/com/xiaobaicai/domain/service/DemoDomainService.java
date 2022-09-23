@@ -19,7 +19,7 @@ public class DemoDomainService {
 
     public UserDto getByUserId(String userId){
         // 模拟数据校验耗时
-        TimeUtil.mockTimeCost(100);
+        TimeUtil.mockTimeCost(20);
         // 返回
         UserBean userBean = demoDaoService.selectById(userId);
         UserDto userDto = new UserDto();

@@ -14,7 +14,7 @@ public class DemoDaoService {
 
     public UserBean selectById(String uid) {
         // 模拟数据库查询
-        TimeUtil.mockTimeCost(200);
+        TimeUtil.mockTimeCost(50);
         // 返回
         UserBean userBean = new UserBean();
         userBean.setPassword("123456");
