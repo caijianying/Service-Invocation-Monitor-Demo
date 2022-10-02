@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: Service-Invocation-Monitor-Demo
+server:
+  port: 8082
