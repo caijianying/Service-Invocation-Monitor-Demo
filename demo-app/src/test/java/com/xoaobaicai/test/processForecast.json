@@ -1,0 +1,40 @@
+[
+  {
+    "activityId": "042e_ea3f",
+    "activityName": "抄送人嗷嗷",
+    "type": "notifier",
+    "userList": [
+      {
+        "userId": "UE122440ED3912777834001266266951",
+        "username": "路回"
+      },
+      {
+        "userId": "YWUS1D22271948173210005948981902"
+      }
+    ]
+  },
+  {
+    "activityId": "1918_5cd3",
+    "activityName": "董事长助理转办",
+    "performType": "AND",
+    "type": "approver",
+    "userList": [
+      {
+        "userId": "U1B3F8E0239833349161310847200931"
+      },
+      {
+        "userId": "UFFAE983578803630039892830244312"
+      }
+    ]
+  },
+  {
+    "activityId": "165b_ef4d",
+    "activityName": "部门负责人",
+    "type": "approver",
+    "userList": [
+      {
+        "userId": "AU63E013811107363797010813210034"
+      }
+    ]
+  }
+]

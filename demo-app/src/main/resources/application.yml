@@ -1,2 +1,10 @@
 server:
   port: 8888
+dubbo:
+  application:
+    name: dubbo-consumer # dubbo应用名
+  registry:
+    address: zookeeper://localhost:2181?init.timeout=60000 # 注册中心url
+    protocol: zookeeper # 协议是zookeeper, 可以不写
+  scan:
+    base-packages: com.xiaobaicai.api.impl # 扫描的包名

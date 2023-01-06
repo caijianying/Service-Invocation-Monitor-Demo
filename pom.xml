@@ -9,6 +9,8 @@
     <version>1.0.0</version>
     <modules>
         <module>demo-app</module>
+        <module>dubbo-interface</module>
+        <module>dubbo-server</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -34,6 +36,7 @@
         <asm.version>3.3.1-v201105211655</asm.version>
         <asm.common.version>6.2.1</asm.common.version>
         <aspect.version>1.9.6</aspect.version>
+        <dubbo.version>3.0.7</dubbo.version>
     </properties>
 
     <dependencyManagement>
@@ -187,6 +190,29 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-aop</artifactId>
                 <version>${boot.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-bom</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-zookeeper</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
