@@ -1,21 +1,14 @@
-package com.xiaobaicai.interfaces.controller;
+package com.xiaobaicai.interfaces.api;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 import com.alibaba.fastjson.JSON;
 
-import com.xiaobaicai.app.service.DemoAppService;
+import com.xiaobaicai.app.service.imp.DemoAppService;
 import com.xiaobaicai.domain.dto.UserDto;
 import com.xiaobaicai.dto.DubboUserDTO;
-import com.xiaobaicai.interfaces.controller.thread.TestCallable;
-import com.xiaobaicai.interfaces.controller.thread.TestRunnable;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.xiaobaicai.app.model.TestCallable;
+import com.xiaobaicai.app.model.TestRunnable;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("api/demo")
 public class DemoController {
 
     @Autowired
@@ -53,7 +46,7 @@ public class DemoController {
         new Thread(new TestRunnable()).start();
 
         // Callable 方式
-        TestCallable callable = new TestCallable("{}");
+        TestCallable callable = new TestCallable();
         FutureTask futureTask = new FutureTask(callable);
         futureTask.run();
 
