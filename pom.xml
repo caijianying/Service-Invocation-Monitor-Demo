@@ -11,12 +11,13 @@
         <module>demo-app</module>
         <module>dubbo-interface</module>
         <module>dubbo-server</module>
+        <module>demo-tkMybatis</module>
     </modules>
     <packaging>pom</packaging>
 
     <properties>
         <spring.version>5.3.18</spring.version>
-        <boot.version>2.4.13</boot.version>
+        <boot.version>2.7.3</boot.version>
 
         <byte-buddy.version>1.10.22</byte-buddy.version>
         <maven.compiler.source>8</maven.compiler.source>
@@ -126,45 +127,45 @@
                 </exclusions>
             </dependency>
 
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm</artifactId>
-                <version>7.1</version>
-            </dependency>
-            <dependency>
-                <artifactId>asm-commons</artifactId>
-                <groupId>org.ow2.asm</groupId>
-                <version>7.1</version>
-            </dependency>
-            <!--字节码增强-->
-            <dependency>
-                <groupId>org.apache.bcel</groupId>
-                <artifactId>bcel</artifactId>
-                <!--                <version>6.5.0</version>-->
-                <version>${bcel.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.ow2.asm</groupId>-->
+<!--                <artifactId>asm</artifactId>-->
+<!--                <version>7.1</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <artifactId>asm-commons</artifactId>-->
+<!--                <groupId>org.ow2.asm</groupId>-->
+<!--                <version>7.1</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash;字节码增强&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.bcel</groupId>-->
+<!--                <artifactId>bcel</artifactId>-->
+<!--                &lt;!&ndash;                <version>6.5.0</version>&ndash;&gt;-->
+<!--                <version>${bcel.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <!--                <version>3.12.1.GA</version>-->
-                <version>${javassist.version}</version>
-                <type>jar</type>
-            </dependency>
-            <!--字节码增强 更强-->
-            <dependency>
-                <groupId>net.bytebuddy</groupId>
-                <artifactId>byte-buddy</artifactId>
-                <!--                                <version>1.5.7</version>-->
-                <version>${byte-buddy.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>javassist</groupId>-->
+<!--                <artifactId>javassist</artifactId>-->
+<!--                &lt;!&ndash;                <version>3.12.1.GA</version>&ndash;&gt;-->
+<!--                <version>${javassist.version}</version>-->
+<!--                <type>jar</type>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash;字节码增强 更强&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>net.bytebuddy</groupId>-->
+<!--                <artifactId>byte-buddy</artifactId>-->
+<!--                &lt;!&ndash;                                <version>1.5.7</version>&ndash;&gt;-->
+<!--                <version>${byte-buddy.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>net.bytebuddy</groupId>
-                <artifactId>byte-buddy-agent</artifactId>
-                <!--                                <version>1.5.7</version>-->
-                <version>${byte-buddy.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>net.bytebuddy</groupId>-->
+<!--                <artifactId>byte-buddy-agent</artifactId>-->
+<!--                &lt;!&ndash;                                <version>1.5.7</version>&ndash;&gt;-->
+<!--                <version>${byte-buddy.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
                 <groupId>org.ow2.asm</groupId>
@@ -214,6 +215,20 @@
                 <version>${dubbo.version}</version>
                 <type>pom</type>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/tk.mybatis/mapper -->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/tk.mybatis/mapper-spring-boot-starter -->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>2.1.5</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
