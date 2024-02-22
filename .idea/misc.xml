@@ -12,6 +12,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/demo-multiThread/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-tkMybatis/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider/pom.xml" />
       </set>
     </option>

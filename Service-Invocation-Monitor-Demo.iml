@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="monitor-agent-20240217-all" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
   </component>
 </module>

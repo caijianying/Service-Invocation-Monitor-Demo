@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="monitor-agent-20240123-all (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/monitor-agent-20240123-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
